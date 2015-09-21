@@ -32,7 +32,7 @@ ENTRYPOINT ["/app/bin/run.sh"]
 CMD ["bundle", "exec", "unicorn", "-c", "/config/unicorn.conf.rb"]
 
 # Expose listen port
-EXPOSE 80
+EXPOSE 9000
 
 # Expose the configuration and logs directories
 VOLUME ["/config", "/app/log"]
